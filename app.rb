@@ -7,20 +7,19 @@ class Battle < Sinatra::Base
 
   get '/' do
     erb(:enter_name)
-
   end
 
   post '/names' do
     session[:Player1] = params[:Player1]
     session[:Player2] = params[:Player2]
-
     redirect '/play'
-
   end
 
   get '/play' do
     @Player1 = session[:Player1]
     @Player2 = session[:Player2]
+    # @Player1_HPs = 100
+    @Player2_HPs = 100
     erb(:play)
   end
 
