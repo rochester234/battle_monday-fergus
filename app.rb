@@ -3,7 +3,7 @@ require 'shotgun'
 
 class Battle < Sinatra::Base
   get '/' do
-    erb(:index)
+    erb(:enter_name)
   end
 
   post '/names' do
