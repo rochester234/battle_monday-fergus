@@ -9,7 +9,7 @@ feature 'user management' do
 
   scenario 'submit button takes you to the next page' do
     visit '/'
-    click_button 'submit'
+    click_button 'Submit'
     expect(current_path).to eq("/names")
   end
 
@@ -17,7 +17,7 @@ feature 'user management' do
     visit '/'
     fill_in 'Player1', :with => 'Chuka'
     fill_in 'Player2', :with => 'Fergus'
-    click_button 'submit'
+    click_button 'Submit'
     expect(page).to have_content("Chuka vs Fergus")
   end
 
