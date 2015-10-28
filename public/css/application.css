@@ -1,27 +1,45 @@
 body {
-background: red
+background: url(/images/Arena.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+
+  /*position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Preserve aspet ratio */
+  /*min-width: 100%;
+  min-height: 100%;*/*/
 
 }
 
 h1 {
   text-align: center;
+  font-size:2.5em;
+  color: yellow;
 }
 
 #he_man {
   background-image: url(/images/he-man2attack.jpg);
-  position: bottom;
-  width: 450px;
-  min-height: 700px;
-  border: 5px dashed red;
+  position: relative;
+  left: 25px;
+  width: 375px;
+  min-height: 400px;
+  /*border: 5px dashed red;*/
   margin: 0 auto;
 }
 
 #wonder_woman {
   background-image: url(/images/wonder_woman.png);
-  position: top;
-  width: 450px;
-  min-height: 700px;
-  border: 5px dashed red;
+  position: relative;
+  right: 50px;
+  width: 375px;
+  min-height: 400px;
+  /*border: 5px dashed red;*/
   margin: 0 auto;
 
 }

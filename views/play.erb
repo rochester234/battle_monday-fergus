@@ -5,18 +5,25 @@
   <title>Battle of the century</title>
 </head>
 <body>
-  <p>
-  <%= @Player1 %> vs <%= @Player2 %>
-  </p>
-  <p>
-  <%= @Player1 %>: <%=@Player1_HPs%>
-  <%= @Player2 %>: <%=@Player2_HPs%>
-  </p>
-  <p>
-  <div id="he_man"></div>
-</p>
-  <p>
-  <div id="wonder_woman"></div>
-</p>
+
+  <div style="width: 100%;">
+        <div style="float:left; width: 50%">
+          <p>
+            <h1>
+              <%= @Player1 %>: Hit Points <%=@Player1_HPs%>
+            </h1>
+            <div id="he_man"></div>
+          </p>
+        </div>
+        <div style="float:right;">
+          <p>
+            <h1>
+              <%= @Player2 %>: Hit Points <%=@Player2_HPs%>
+            </h1>
+            <div id="wonder_woman"></div>
+          </p>
+        </div>
+  </div>
+
 </body>
 </html>

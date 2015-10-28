@@ -8,10 +8,7 @@ feature 'viewing opponents hit points' do
 
 
     scenario 'views an opponents hitpoints' do
-      visit '/'
-      fill_in 'Player1', :with => 'Wonder Woman'
-      fill_in 'Player2', :with => 'He-Man'
-      click_button 'Submit'
-      expect(page).to have_content("He-Man: 100")
+      sign_in_and_play
+      expect(page).to have_content("He-Man: Hit Points 100")
     end
 end
